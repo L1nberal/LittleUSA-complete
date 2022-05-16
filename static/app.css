@@ -1,0 +1,199 @@
+@charset 'UTF-8';
+
+*{
+    box-sizing: border-box;
+    /* 
+        + Explanations:
+        width + padding + border = actual width of an element
+        height + padding + border = actual height of an element
+     */
+}
+
+body{
+    margin: 0px;
+}
+
+/* ===================================Header====================================== */
+
+header{
+    width: 1250px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+/* ========================header-nav===================== */
+header nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* border: solid 1px orange; */
+    width: 1250px;
+    justify-content: center;
+}
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    color: rgb(159, 125, 82);
+}
+/* ======================end of header-nav=========================== */
+
+/* =================================Header-container======================== */
+
+.header-container{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-container__logo a img{
+    width: 300px;
+}
+
+.header-container__search-bar{
+    border: solid 1px rgb(159, 159, 159);
+    width: 580px;
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+    padding: 0px 15px;
+}
+
+.header-container__search-bar input{
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+
+}
+
+.header-container__search-bar .fa-magnifying-glass{
+    font-size: 20px;
+    padding: 9px 9px;
+    cursor: pointer;
+    border-left: solid 1px rgb(220, 218, 218);
+}
+
+.header-container__user{
+    width: 140px;
+    height: 40px;
+    border: solid 1px rgb(159, 159, 159);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-container__user .fa-circle-user{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.header-container__cart{
+    width: 42px;
+    height: 42px;
+    border: solid 1px rgb(159, 159, 159);
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-container__cart .fa-cart-arrow-down{
+    font-size: 20px;
+}
+
+/* =====================================End of Header-container============================== */
+/* ==============================End of Header=================================== */
+
+/* ==================================Content===================================== */
+.wrapper-content{
+    width: 1250px;
+    height: auto;
+    margin: 0px auto;
+    /* border: solid 1px transparent; */
+    flex-grow: 1;
+    /* position: relative; */
+}
+
+/* ======================content-nav================== */
+.content-nav{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    transform: translateY(-130%);
+    background-color: rgb(136, 174, 158);
+}
+
+.content-nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.content-nav ul li{
+    list-style: none;
+    display: block;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-right: solid 1px rgb(8, 88, 25);
+}
+
+.content-nav ul .end{
+    border: 0px;
+}
+
+.content-nav ul li:hover{
+    background-color: rgb(74, 104, 91);
+}
+
+.content-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+/* ====================end of content-nav======================= */
+
+/* =====================content-carousel===================== */
+.content-carousel{
+    margin-top: 130px;
+}
+/* ======================end of content-carousel================================ */
+
+/* =================================content-brands========================= */
+
+.content-brands{
+    overflow: hidden;
+}
+
+.content-brands .track{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+
+}
+
+.content-brands .track li{
+    list-style: none;
+    display: block;
+}
+
+.content-brands .track li img{
+    width: 178.5px;
+}
+/* ============================end of content-brands============================ */
+
+/* =================================End of content================================= */
+
+
