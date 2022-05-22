@@ -1,0 +1,237 @@
+*{
+    box-sizing: border-box;
+    /* 
+        + Explanations:
+        width + padding + border = actual width of an element
+        height + padding + border = actual height of an element
+     */
+}
+
+body{
+    margin: 0px;
+}
+
+/* ===================================Header====================================== */
+
+header{
+    width: 1250px;
+    margin: 0px auto;
+    margin-bottom: 50px;
+}
+
+
+/* ========================header-nav===================== */
+header nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* border: solid 1px orange; */
+    width: 1250px;
+    justify-content: center;
+}
+
+header nav ul li{
+    list-style: none;
+    display: block;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+
+header nav ul li:hover{
+    color: rgb(159, 125, 82);
+}
+/* ======================end of header-nav=========================== */
+
+/* =================================Header-container======================== */
+
+.header-container{
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-container__logo a img{
+    width: 300px;
+}
+
+.header-container__search-bar{
+    border: solid 1px rgb(159, 159, 159);
+    width: 580px;
+    height: 40px;
+    display: flex;
+    border-radius: 30px;
+    padding: 0px 15px;
+}
+
+.header-container__search-bar input{
+    border: 0px;
+    outline: 0px;
+    width: 100%;
+
+}
+
+.header-container__search-bar .fa-magnifying-glass{
+    font-size: 20px;
+    padding: 9px 9px;
+    cursor: pointer;
+    border-left: solid 1px rgb(220, 218, 218);
+}
+
+.header-container a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+.header-container__user{
+    width: auto;
+    padding: 0px 12px;
+    height: 40px;
+    border: solid 1px rgb(159, 159, 159);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.header-container__user .fa-circle-user{
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+.header-container__user .username .submenu{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    background-color: rgb(133, 125, 125);
+    left: 0px;
+    top: 39px;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.header-container__user:hover .username .submenu{
+    display: flex;
+}
+
+.header-container__user .username .submenu ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header-container__user .username .submenu ul li{
+    list-style: none;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    text-indent: 10px;
+    
+}
+
+.header-container__user .username .submenu ul li:hover{
+    background-color: rgb(32, 30, 30);
+    color: rgb(191, 191, 191);
+}
+
+
+.header-container__cart{
+    width: 42px;
+    height: 42px;
+    border: solid 1px rgb(159, 159, 159);
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header-container__cart .fa-cart-arrow-down{
+    font-size: 20px;
+}
+
+/* =====================================End of Header-container============================== */
+/* ==============================End of Header=================================== */
+
+/* ==================================Content===================================== */
+.wrapper-content{
+    width: 1250px;
+    height: auto;
+    margin: 0px auto;
+    /* border: solid 1px orange; */
+    flex-grow: 1;
+    /* position: relative; */
+}
+
+/* ======================content-nav================== */
+.content-nav{
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    transform: translateY(0%);
+    background-color: rgb(136, 174, 158);
+}
+
+.content-nav ul{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+}
+
+.content-nav ul li{
+    list-style: none;
+    display: block;
+    padding: 20px 25px;
+    cursor: pointer;
+    border-right: solid 1px rgb(8, 88, 25);
+}
+
+.content-nav ul .end{
+    border: 0px;
+}
+
+.content-nav ul li:hover{
+    background-color: rgb(74, 104, 91);
+}
+
+.content-nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+/* ====================end of content-nav======================= */
+
+/* ==============================content-user======================== */
+.content-user{
+    transform: translateY(150px);
+}
+
+.content-user div{
+    margin: 20px auto;
+    font-size: 20px;
+    
+}
+/* ==========================end of content-user======================== */
+
+
+
+
+
+
+
+
+/* ==================================End of Content===================================== */
+
+

@@ -75,13 +75,20 @@ header nav ul li:hover{
 
 .header-container__search-bar .fa-magnifying-glass{
     font-size: 20px;
-    padding: 9px 9px;
+    padding: 9px 2px 9px 12px;
     cursor: pointer;
     border-left: solid 1px rgb(220, 218, 218);
 }
 
+.header-container a{
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
 .header-container__user{
-    width: 140px;
+    min-width: auto;
+    padding: 0px 12px;
     height: 40px;
     border: solid 1px rgb(159, 159, 159);
     border-radius: 20px;
@@ -89,12 +96,55 @@ header nav ul li:hover{
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    position: relative;
 }
 
 .header-container__user .fa-circle-user{
     font-size: 18px;
     margin-right: 5px;
 }
+
+.header-container__user .username .submenu{
+    width: 150px;
+    height: 60px;
+    position: absolute;
+    background-color: rgb(133, 125, 125);
+    left: 0px;
+    top: 39px;
+    border-radius: 5px;
+    display: none;
+    align-items: center;
+    overflow: hidden;
+    
+}
+
+.header-container__user:hover .username .submenu{
+    display: flex;
+}
+
+.header-container__user .username .submenu ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.header-container__user .username .submenu ul li{
+    list-style: none;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    text-indent: 10px;
+    
+}
+
+.header-container__user .username .submenu ul li:hover{
+    background-color: rgb(32, 30, 30);
+    color: rgb(191, 191, 191);
+}
+
 
 .header-container__cart{
     width: 42px;

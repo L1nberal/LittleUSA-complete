@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='login.css')}}" />
+    <script src="https://kit.fontawesome.com/a60b5abf1c.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script type="text/javascript" src="{{url_for('static', filename='login.js')}}"></script>
+    <title>signup Form</title>
+</head>
+<body onload="Setupforcards()">
+    <!-- =========================content======================== -->
+    <div class="wrapper">
+        <div class="logo"><img src="../static/images/logo.jpg" alt=""></div>
+
+        <!-- ======================Form======================= -->
+        <form action="" class="wrapper__loginform" method="POST">
+            <h1 class="wrapper__loginform-form-heading">Sign-up Form</h1>
+            <div class="wrapper__loginform-login">
+                <i class="far fa-user-circle"></i>
+                <input type="text" name="username" placeholder="User name" class="wrapper__loginform-input" />
+            </div>
+
+            <div class="wrapper__loginform-login">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" name="email" placeholder="email" class="wrapper__loginform-input" />
+            </div>
+         
+            <div class="wrapper__loginform-login">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" placeholder="Password" class="wrapper__loginform-input wrapper__loginform-input-password" />
+                <div class="wrapper__loginform-eye">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div>
+<!-- 
+            <div class="wrapper__loginform-login">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" name="password" placeholder="Password again" class="wrapper__loginform-input wrapper__loginform-input-password" />
+                <div class="wrapper__loginform-eye">
+                    <i class="fa-solid fa-eye"></i>
+                </div>
+            </div> -->
+            <input type="submit"  value="Submit" class="wapper__loginform-submit-btn">
+        </form>
+        <!-- ====================End of form===================== -->
+    </div>
+
+    <!-- ============================navigation button===================== -->
+    <a href="{{ url_for('home') }}"><button class="navigation-button button-home">Home</button></a>
+
+    <a href="{{ url_for('login') }}"><button class="navigation-button button-sign-up" >Sign in</button></a>
+   <!-- =========================end of navigation button========================= -->
+
+    <!-- =================End of content======================= -->
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='login.css')}}" />
+    <link type="text/css" rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js" ></script>
+    <script type="text/javascript" src="{{url_for('static', filename='login.js')}}"></script>
+    <title>Log in Form</title>
+</head>
+<body onload="Setupforcards()">
+    <!-- =========================content======================== -->
+    <div class="wrapper">
+        <div class="logo"><img src="../static/images/logo.jpg" alt=""></div>
+
+        <!-- ======================Form======================= -->
+        <form method="POST" action="" class="wrapper__loginform">
+            <h1 class="wrapper__loginform-form-heading">Login Form</h1>
+            <div class="wrapper__loginform-login">
+                <i class="far fa-user-circle"></i>
+                <input type="email" name="email" placeholder="Your email" class="wrapper__loginform-input" />
+            </div>
+         
+            <div class="wrapper__loginform-login">
+                <i class="far fa-key"></i>
+                <input type="password"  name="password" placeholder="Password" class="wrapper__loginform-input wrapper__loginform-input-password" />
+                <div class="wrapper__loginform-eye">
+                     <i class="fal fa-eye"></i>
+                </div>
+            </div>
+            <input type="submit" value="Submit" class="wapper__loginform-submit-btn">
+        </form>
+        
+    
+        <!-- ====================End of form===================== -->
+    </div>
+
+    <!-- ============================navigation button===================== -->
+    <a href="{{ url_for('home') }}"><button class="navigation-button button-home" >Home</button></a>
+
+    <a href="{{ url_for('register') }}"><button class="navigation-button button-sign-up">Sign up</button></a>
+   <!-- =========================end of navigation button========================= -->
+
+    <!-- =================End of content======================= -->
+</body>
+</html>
